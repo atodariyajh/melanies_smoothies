@@ -8,6 +8,11 @@ st.write(
 )
 from snowflake.snowpark.functions import col
 
+name_on_order = st.text_input("Name of Smoothie")
+st.write("The Name on your smoothie will be :", name_on_order)
+
+from snowflake.snowpark.functions import col
+
 
 #session = get_Active_session()
 
