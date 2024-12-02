@@ -9,7 +9,7 @@ st.write(
 from snowflake.snowpark.functions import col
 
 
-session = get_Active_session()
+#session = get_Active_session()
 
 cnx = st.connection("snowflake")
 session = cnx.session()
