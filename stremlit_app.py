@@ -8,6 +8,9 @@ st.write(
     """Name on Smoothie:"""
 )
 
+st.write(
+    """The name on your smoothie will be:"""
+)
 cnx = st.connection("snowflake")
 session = cnx.session()
 my_dataframe = session.table("smoothies.public.orders").filter(col("ORDER_FILLED")==0).collect()
